@@ -1,49 +1,39 @@
-**Système de Gestion des Étudiants**
-Ce projet est une application web développée avec Spring Boot, permettant de gérer une liste d’étudiants. Il expose des services REST pour effectuer des opérations CRUD (Créer, Lire, Mettre à jour, Supprimer) sur les données des étudiants.
+# Projet Spring Boot - Gestion des Étudiants
 
-L’objectif principal est de mettre en pratique les concepts de Spring Boot, Spring Data JPA, et REST API.
+## Description
+Ce projet est une application de gestion des étudiants développée avec Spring Boot. Elle expose une API REST permettant de créer, lire, mettre à jour et supprimer des informations sur les étudiants, ainsi que de réaliser des opérations supplémentaires comme compter les étudiants ou regrouper par année de naissance.
 
-**Fonctionnalités**
-Gestion des Étudiants :
-Ajouter un nouvel étudiant.
-Consulter la liste des étudiants.
-Modifier les informations d’un étudiant.
-Supprimer un étudiant.
+---
 
-**Prérequis**
-Java 8 ou supérieur.
-Maven 3.x pour la gestion des dépendances.
-Un IDE compatible avec Spring Boot (par exemple, IntelliJ IDEA ou Eclipse).
-MySQL comme système de gestion de base de données.
-Structure du Projet
-La structure du projet générée via Spring Initializr est organisée comme suit :
+## Fonctionnalités
+- Ajouter un nouvel étudiant
+- Supprimer un étudiant par ID
+- Lister tous les étudiants
+- Compter le nombre total d'étudiants
+- Regrouper les étudiants par année de naissance
 
-controllers : Contient les classes contrôleurs REST gérant les requêtes HTTP.
+---
 
-entities : Contient les classes entités représentant les modèles de données (par exemple, Student).
-services : Contient la logique métier pour gérer les étudiants.
-repositories : Contient les interfaces pour l'accès aux données via JPA.
+## Prérequis
+Avant de commencer,on doit installé les outils suivants :
+- [Java JDK](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html) (version 11 ou supérieure)
+- [Maven](https://maven.apache.org/)
+- [MySQL](https://www.mysql.com/) (ou une autre base de données compatible)
+- [Postman](https://www.postman.com/) (pour tester l'API)
+- Un IDE (IntelliJ IDEA, Eclipse, ou autre)
 
-**Configuration de la Base de Données**
-Ajoutez les paramètres suivants dans le fichier application.properties :
+---
 
-spring.datasource.url=jdbc:mysql://localhost:3306/student_db
-spring.datasource.username=root
-spring.datasource.password=your_password
-spring.jpa.hibernate.ddl-auto=update
-spring.jpa.show-sql=true
-spring.mvc.pathmatch.matching-strategy=ant-path-matcher
+src
+├── main
+│   ├── java
+│   │   ├── com.example.demo
+│   │   │   ├── controllers    # Contrôleurs REST
+│   │   │   ├── entities       # Entités JPA
+│   │   │   ├── services       # Services métier
+│   │   │   └── repositories   # Repositories Spring Data JPA
+│   ├── resources
+│       ├── application.properties  # Configuration de l'application
 
-**Technologies Utilisées***
 
-Spring Boot : Framework pour la création de l'application.
-Spring Data JPA : Pour l'accès aux données et l’interaction avec la base de données.
-MySQL : Système de gestion de base de données.
-Spring Boot DevTools : Pour un rechargement automatique lors du développement.
 
-Voici les principales dépendances utilisées dans le projet :
-
-Spring Web : Pour gérer les endpoints REST.
-Spring Data JPA : Pour la gestion des entités et des opérations CRUD.
-MySQL Driver : Pour connecter l'application à la base de données MySQL.
-Spring Boot DevTools : Pour faciliter le développement.
