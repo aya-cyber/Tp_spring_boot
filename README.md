@@ -20,20 +20,13 @@ Avant de commencer,on doit installé les outils suivants :
 - [Maven](https://maven.apache.org/)
 - [MySQL](https://www.mysql.com/) (ou une autre base de données compatible)
 - [Postman](https://www.postman.com/) (pour tester l'API)
-- Un IDE (IntelliJ IDEA, Eclipse, ou autre)
+- Un IDE = IntelliJ IDEA
 
 ---
 
-src
-├── main
-│   ├── java
-│   │   ├── com.example.demo
-│   │   │   ├── controllers    # Contrôleurs REST
-│   │   │   ├── entities       # Entités JPA
-│   │   │   ├── services       # Services métier
-│   │   │   └── repositories   # Repositories Spring Data JPA
-│   ├── resources
-│       ├── application.properties  # Configuration de l'application
 
 
+
+
+https://github.com/user-attachments/assets/d8b9a6f2-efda-4329-8a99-d3806b97d6f0
 
