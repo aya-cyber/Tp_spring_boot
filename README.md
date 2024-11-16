@@ -19,6 +19,7 @@ Structure du Projet
 La structure du projet générée via Spring Initializr est organisée comme suit :
 
 controllers : Contient les classes contrôleurs REST gérant les requêtes HTTP.
+
 entities : Contient les classes entités représentant les modèles de données (par exemple, Student).
 services : Contient la logique métier pour gérer les étudiants.
 repositories : Contient les interfaces pour l'accès aux données via JPA.
@@ -33,7 +34,8 @@ spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
 spring.mvc.pathmatch.matching-strategy=ant-path-matcher
 
-**Technologies Utilisées**
+**Technologies Utilisées***
+
 Spring Boot : Framework pour la création de l'application.
 Spring Data JPA : Pour l'accès aux données et l’interaction avec la base de données.
 MySQL : Système de gestion de base de données.
